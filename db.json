@@ -1,0 +1,40 @@
+{
+  "fornecedores": [
+    {
+      "nome": "Confiança LTDA.",
+      "endereco": "Rua da Alegria, 989 - Jardim Azul",
+      "telefone": "11999328765",
+      "id": "1"
+    },
+    {
+      "nome": "Qualidade S.A.",
+      "endereco": "Rua Monte Feliz, 823 - Saúde",
+      "telefone": "11981217630",
+      "id": "2"
+    },
+    {
+      "nome": "Garantia S.A.",
+      "endereco": "Rua do Ouro, 218 - Tatuapé",
+      "telefone": "11998762186",
+      "id": "5t2bU8"
+    },
+    {
+      "nome": "Fartura LTDA.",
+      "endereco": "Rua das Belezas, 198 - Tucuruvi",
+      "telefone": "11987621098",
+      "id": "hhXSfM"
+    },
+    {
+      "nome": "Sucesso LTDA.",
+      "endereco": "Rua da Prata, 321 - Tremembé",
+      "telefone": "11996784510",
+      "id": "uZ6Dgm"
+    },
+    {
+      "id": "aaooZS",
+      "nome": "Nintendo SA",
+      "endereco": "Rua das Couves, 568",
+      "telefone": "11998237123"
+    }
+  ]
+}

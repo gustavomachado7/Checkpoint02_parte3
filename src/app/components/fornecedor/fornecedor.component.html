@@ -1,0 +1,78 @@
+<div class="container p-5">
+  <h1>Olá! Cadastre aqui um novo fornecedor!</h1>
+  <form
+    [formGroup]="fornecedorForm"
+    (ngSubmit)="inserir()"
+    class="row g-3 mt-3"
+  >
+    <div class="col-auto">
+      <label for="nome" class="visually">Nome</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        placeholder="Nome"
+        formControlName="nome"
+      />
+    </div>
+    <div class="col-auto">
+      <label for="endereco" class="visually">Endereço</label>
+      <input
+        type="text"
+        class="form-control"
+        id="endereco"
+        placeholder="Endereço"
+        formControlName="endereco"
+      />
+    </div>
+    <div class="col-auto">
+      <label for="telefone" class="visually">Telefone</label>
+      <input
+        type="text"
+        class="form-control"
+        id="telefone"
+        placeholder="Telefone"
+        formControlName="telefone"
+      />
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-success mt-4">Enviar</button>
+    </div>
+  </form>
+
+  <h2 class="mt-5">Lista de fornecedores:</h2>
+
+  <table class="table table-light table-striped mt-3">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (fornecedor of fornecedores; track $index){
+      <tr>
+        <th scope="row">{{ fornecedor.id }}</th>
+        <td>{{ fornecedor.nome }}</td>
+        <td>{{ fornecedor.endereco }}</td>
+        <td>{{ fornecedor.telefone }}</td>
+        <td>
+          <a href="fornecedor/{{ fornecedor.id }}" class="btn btn-warning"
+            >Editar</a
+          >
+          |
+          <input
+            type="button"
+            value="Remover"
+            class="btn btn-danger"
+            (click)="remover(fornecedor.id)"
+          />
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
